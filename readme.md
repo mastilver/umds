@@ -1,44 +1,19 @@
 # umds [![Build Status](https://travis-ci.org/mastilver/umds.svg?branch=master)](https://travis-ci.org/mastilver/umds) [![Greenkeeper badge](https://badges.greenkeeper.io/mastilver/umds.svg)](https://greenkeeper.io/)
 
-> My best module
-
-
-## Install
-
-```
-$ npm install --save umds
-```
+> Umdify node modules
 
 
 ## Usage
 
-```js
-const umds = require('umds');
+You want to use [object-assign](https://github.com/sindresorhus/object-assign) on your browser but you don't want to use build tools like `webpack` or `browserify`, just import this javascript script and it will be available on `window['object-assign']`:
 
-umds('unicorns');
-//=> 'unicorns & rainbows'
+```html
+<script type="text/javascript" src="https://unpkg.com/@umds/object-assign">
 ```
 
+## Contributing
 
-## API
-
-### umds(input, [options])
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
+You can umdify any modules by editing: `umds.json`
 
 ## License
 
