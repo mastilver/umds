@@ -4,6 +4,8 @@ node_js:
 script:
   - xo
   - node lib/build
+before_deploy:
+  - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 deploy:
   - provider: script
     script: node lib/publish
