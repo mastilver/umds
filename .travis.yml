@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - '7'
+script:
+  - xo
+  - node lib/build
+deploy:
+  - provider: script
+    script: node lib/publish
+    skip_cleanup: true
+    on:
+      branch: master
