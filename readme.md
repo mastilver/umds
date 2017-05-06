@@ -1,5 +1,7 @@
 # umds [![Build Status](https://travis-ci.org/mastilver/umds.svg?branch=master)](https://travis-ci.org/mastilver/umds)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mastilver/umds.svg)](https://greenkeeper.io/)
+
 > My best module
 
 
