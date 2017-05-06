@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "object-assign": "^4.1.1",
-    "xo": "^0.17.0"
+    "xo": "^0.18.2"
   },
   "xo": {
     "esnext": true,
