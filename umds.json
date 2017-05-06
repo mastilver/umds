@@ -1,3 +1,4 @@
 {
-	"object-assign": {}
+  "object-assign": {},
+  "redux-act-async": {}
 }
