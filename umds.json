@@ -1,4 +1,6 @@
 {
   "object-assign": {},
-  "redux-act-async": {}
+  "redux-act-async": {
+      "beta": 21
+  }
 }

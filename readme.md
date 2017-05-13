@@ -5,11 +5,61 @@
 
 ## Usage
 
-You want to use [object-assign](https://github.com/sindresorhus/object-assign) on your browser but you don't want to use build tools like `webpack` or `browserify`, just import this javascript script and it will be available on `window['object-assign']`:
+### ES modules
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/@umds/object-assign"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My app</title>
+</head>
+<body>
+  <script type="module">
+    import objectAssign from 'https://unpkg.com/@umds/object-assign';
+
+    console.log(objectAssign({one: 1}, {two: 2}));
+  </script>
+</body>
+</html>
 ```
+
+### RequireJs / AMD
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My app</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/@umds/object-assign"></script>
+  <script>
+    requirejs(['object-assign'], (objectAssign) => {
+      console.log(objectAssign({one: 1}, {two: 2}));
+    });
+  </script>
+</body>
+</html>
+```
+
+### Global
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My app</title>
+</head>
+<body>
+  <script type="text/javascript" src="https://unpkg.com/@umds/object-assign"></script>
+  <script>
+    console.log(window['object-assign']({one: 1}, {two: 2}));
+  </script>
+</body>
+</html>
+```
+
 
 ## Contributing
 
