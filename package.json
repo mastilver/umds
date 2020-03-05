@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "execa": "^0.8.0",
-    "p-map": "^1.1.1",
+    "p-map": "^4.0.0",
     "pascalcase": "^0.1.1",
     "rimraf": "^2.6.1",
     "rollup": "^0.49.2",
